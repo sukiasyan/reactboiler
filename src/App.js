@@ -8,28 +8,35 @@ import {
     Redirect
   } from 'react-router-dom'
 import "./styles/style.scss";
-import Users from './components/users'
+import Users from './components/fullRoaster'
 import Contact from './components/contact'
 import Home from './components/home'
+import Menu from './components/main'
+import Header from './components/header'
+import Main from './components/main'
+
 
 const App = () => {
   return (
-    <Router>
-        <div className="App">
-            <div className="container">
-                <ul>
-                <li><Link to="/users">Users</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/">Home</Link></li>
-                </ul>
-            <hr/>
-            <Route exact path="/" component={Home} />  
-            <Route exact path="/users" component={Users} />
-            <Route exact path="/contact" component={Contact} />
-            </div>
-        </div>
-  </Router>
+      <div>
+        <hr/>
+        <Header />
+        <Main />
+    </div>
   );
 };
 export default App;
-// ReactDOM.render(<App />, document.getElementById("app"));
+// ReactDOM.
+
+// import React from 'react'
+// import Header from './Header'
+// import Main from './Main'
+
+// const App = () => (
+//   <div>
+//     <Header />
+//     <Main />
+//   </div>
+// )
+
+// export default App
