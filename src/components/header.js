@@ -6,9 +6,10 @@ import { Row, Col, Tab, Nav } from 'react-bootstrap';
 // between routes.
 const Header = () => (
   <header>
-    <nav>
+    <nav className="menu">
       <ul>
-        <li><Link className="menu" to='/'>Home</Link></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link  to='/getApidata'>Get Data</Link></li>
         <li><Link to='/roster'>Roster</Link></li>
         <li><Link to='/schedule'>Schedule</Link></li>
         <li><Link to='/contact'>Contact</Link></li>

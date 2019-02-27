@@ -4,6 +4,7 @@ import Home from './home'
 import Roster from './roaster'
 import Schedule from './schedule'
 import Contact from './contact'
+import GetApidata from './getApidata'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -15,6 +16,7 @@ const Main = () => (
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/roster' component={Roster}/>
+      <Route path='/getApidata' component={GetApidata}/>
       <Route path='/schedule' component={Schedule}/>
       <Route path='/contact' component={Contact}/>
     </Switch>
